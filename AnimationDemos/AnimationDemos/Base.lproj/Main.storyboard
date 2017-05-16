@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="20f-J1-3Jt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animation-iOS-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Animation-iOS" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCV-Te-uO9">
+                                <rect key="frame" x="16" y="64" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="enh-5e-vIx"/>
+                                    <constraint firstAttribute="height" constant="30" id="qH0-LQ-5ki"/>
+                                </constraints>
+                                <state key="normal" title="CoreAnimation"/>
+                                <connections>
+                                    <action selector="CMClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E03-nG-8A2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhL-tN-wpc">
+                                <rect key="frame" x="16" y="102" width="123" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lDp-lv-Nfq"/>
+                                    <constraint firstAttribute="width" constant="123" id="vxN-IX-hTp"/>
+                                </constraints>
+                                <state key="normal" title="UIViewAnimations"/>
+                                <connections>
+                                    <action selector="ViewAnimationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mm7-Az-XhV"/>
+                                    <segue destination="NyH-Uq-Cuc" kind="show" id="hfe-Rl-iBz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISw-Tv-6Dd">
+                                <rect key="frame" x="16" y="140" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="F7v-iO-bFN"/>
+                                    <constraint firstAttribute="height" constant="30" id="kLv-Rn-twa"/>
+                                </constraints>
+                                <state key="normal" title="CoreAnimation"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6429081025681026" green="1" blue="0.90161923104871033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.8488131669126896" green="0.28793833013476278" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ISw-Tv-6Dd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="3DO-Je-bBR"/>
+                            <constraint firstItem="HhL-tN-wpc" firstAttribute="top" secondItem="SCV-Te-uO9" secondAttribute="bottom" constant="8" id="EAp-0C-Smt"/>
+                            <constraint firstItem="ISw-Tv-6Dd" firstAttribute="top" secondItem="HhL-tN-wpc" secondAttribute="bottom" constant="8" id="KpZ-Nf-Ntn"/>
+                            <constraint firstItem="SCV-Te-uO9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Y8g-Dr-HcU"/>
+                            <constraint firstItem="HhL-tN-wpc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="aqm-cC-gtI"/>
+                            <constraint firstItem="SCV-Te-uO9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vPg-PB-lkk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animations-iOS" id="0dh-C6-D15"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="36"/>
+        </scene>
+        <!--UIViewAnimation-->
+        <scene sceneID="zbJ-Bc-2UC">
+            <objects>
+                <viewController title="UIViewAnimation" id="NyH-Uq-Cuc" customClass="UIViewAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OIa-Et-dVT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ufk-8K-RwL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JYz-E5-TyE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hni-FI-ydA">
+                                <rect key="frame" x="10" y="72" width="46" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-cn-bPd" userLabel="上翻页">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="上翻页"/>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFV-1p-EaB" userLabel="下翻页">
+                                        <rect key="frame" x="0.0" y="30" width="46" height="30"/>
+                                        <state key="normal" title="下翻页"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="NyH-Uq-Cuc" eventType="touchUpInside" id="5fl-pf-s04"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3y-XU-XYJ" userLabel="左翻转">
+                                        <rect key="frame" x="0.0" y="60" width="46" height="30"/>
+                                        <state key="normal" title="左翻转"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="NyH-Uq-Cuc" eventType="touchUpInside" id="Oaq-Tp-FOR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGo-Bq-3UX" userLabel="右翻转">
+                                        <rect key="frame" x="0.0" y="90" width="46" height="30"/>
+                                        <state key="normal" title="右翻转"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="NyH-Uq-Cuc" eventType="touchUpInside" id="zPz-Zr-AMi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Jue-Yc-cxG"/>
+                                    <constraint firstAttribute="width" constant="46" id="Zn5-zg-ivc"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49E-rG-FZR">
+                                <rect key="frame" x="119" y="79" width="240" height="219"/>
+                                <color key="backgroundColor" red="0.88632362496270523" green="0.57377920874336774" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="AoW-vJ-HJT"/>
+                                    <constraint firstAttribute="height" constant="219" id="foX-xa-TVY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="49E-rG-FZR" firstAttribute="top" secondItem="OIa-Et-dVT" secondAttribute="bottom" constant="15" id="5Ux-Ir-WpY"/>
+                            <constraint firstItem="hni-FI-ydA" firstAttribute="top" secondItem="OIa-Et-dVT" secondAttribute="bottom" constant="8" id="MNi-nF-Buo"/>
+                            <constraint firstItem="49E-rG-FZR" firstAttribute="leading" secondItem="hni-FI-ydA" secondAttribute="trailing" constant="63" id="ac3-fF-qJf"/>
+                            <constraint firstItem="hni-FI-ydA" firstAttribute="leading" secondItem="JYz-E5-TyE" secondAttribute="leading" constant="10" id="jSn-Nc-HMM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amView" destination="49E-rG-FZR" id="N06-eY-lGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLU-IG-X5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528.8" y="35.532233883058474"/>
+        </scene>
+        <!--Animations-iOS-->
+        <scene sceneID="mbY-xf-B2b">
+            <objects>
+                <navigationController title="Animations-iOS" hidesBarsOnSwipe="YES" id="20f-J1-3Jt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RFc-lr-5Pn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hs0-Ig-lxR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZL-MK-NVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="36"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+</document>
